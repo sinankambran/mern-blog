@@ -15,10 +15,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-    }, {timeseries: true}
+    },  { timestamps: true }
 
 );
 
-const User = mongoose.model('user', userSchema);
+const User = mongoose.model('User', userSchema);
 
 export default User;
