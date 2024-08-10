@@ -1,9 +1,8 @@
-import React from 'react'
+import { configureStore } from '@reduxjs/toolkit'
+import userReducer from './user/userSlice';
 
-export default function store() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+export const store = configureStore({
+  reducer: {
+    user:userReducer,
+  },
+});
